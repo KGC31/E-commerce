@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Cart - ShopGrids Bootstrap 5 eCommerce HTML Template.</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+    <!-- ========================= CSS here ========================= -->
+        <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Tiny slider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Glightbox css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.css" integrity="sha512-iQ3H4A+iyBTP8M4ypX5PrTt2S+G1zmRjf0k0uOASKlFHysV8TL9ZoQyVwPss0D12IBTMoDEHA8+bg8a1viS9Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+    <%- include("navbar.ejs") %>
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="breadcrumbs-content">
+                        <h1 class="page-title">Cart</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <ul class="breadcrumb-nav">
+                        <li><a href="/"><i class="lni lni-home"></i> Home</a></li>
+                        <li><a href="/">Shop</a></li>
+                        <li>Cart</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Shopping Cart -->
+    <div class="shopping-cart section">
+        <div class="container">
+            <div class="cart-list-head">
+                <!-- Cart List Title -->
+                <div class="cart-list-title">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-1 col-12">
+
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <p>Product Name</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>Quantity</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>Discount</p>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-12">
+                            <p>Remove</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Cart List Title -->
+                <!-- Cart Single List list -->
+                <div class="cart-single-list">
+                    <div class="row align-items-center">
+                        <div class="col-lg-1 col-md-1 col-12">
+                            <a href="/product-details"><img src="assets/images/cart/01.jpg" alt="#"></a>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <h5 class="product-name"><a href="/product-details">
+                                    Canon EOS M50 Mirrorless Camera</a></h5>
+                            <p class="product-des">
+                                <span><em>Type:</em> Mirrorless</span>
+                                <span><em>Color:</em> Black</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="count-input">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>$910.00</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>$29.00</p>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-12">
+                            <a class="remove-item" href="javascript:void(0)"><i class="lni lni-close"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single List list -->
+                <!-- Cart Single List list -->
+                <div class="cart-single-list">
+                    <div class="row align-items-center">
+                        <div class="col-lg-1 col-md-1 col-12">
+                            <a href="/product-details"><img src="assets/images/cart/02.jpg" alt="#"></a>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <h5 class="product-name"><a href="/product-details">
+                                    Apple iPhone X 256 GB Space Gray</a></h5>
+                            <p class="product-des">
+                                <span><em>Memory:</em> 256 GB</span>
+                                <span><em>Color:</em> Space Gray</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="count-input">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>$1100.00</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>—</p>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-12">
+                            <a class="remove-item" href="javascript:void(0)"><i class="lni lni-close"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single List list -->
+                <!-- Cart Single List list -->
+                <div class="cart-single-list">
+                    <div class="row align-items-center">
+                        <div class="col-lg-1 col-md-1 col-12">
+                            <a href="/product-details"><img src="assets/images/cart/03.jpg" alt="#"></a>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <h5 class="product-name"><a href="/product-details">HP LaserJet Pro Laser Printer</a></h5>
+                            <p class="product-des">
+                                <span><em>Type:</em> Laser</span>
+                                <span><em>Color:</em> White</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="count-input">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>$550.00</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>—</p>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-12">
+                            <a class="remove-item" href="javascript:void(0)"><i class="lni lni-close"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single List list -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- Total Amount -->
+                    <div class="total-amount">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-6 col-12">
+                                <div class="left">
+                                    <div class="coupon">
+                                        <form action="#" target="_blank">
+                                            <input name="Coupon" placeholder="Enter Your Coupon">
+                                            <div class="button">
+                                                <button class="btn">Apply Coupon</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="right">
+                                    <ul>
+                                        <li>Cart Subtotal<span>$2560.00</span></li>
+                                        <li>Shipping<span>Free</span></li>
+                                        <li>You Save<span>$29.00</span></li>
+                                        <li class="last">You Pay<span>$2531.00</span></li>
+                                    </ul>
+                                    <div class="button">
+                                        <a href="checkout.html" class="btn">Checkout</a>
+                                        <a href="/product-grids" class="btn btn-alt">Continue shopping</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ End Total Amount -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Shopping Cart -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <%- include("footer.ejs") %>
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="bi bi-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Tiny slider js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Glightbox js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" integrity="sha512-S/H9RQ6govCzeA7F9D0m8NGfsGf0/HjJEiLEfWGaMCjFzavo+DkRbYtZLSO+X6cZsIKQ6JvV/7Y9YMaYnSGnAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
